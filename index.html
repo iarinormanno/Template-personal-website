@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/snow.css" />
+    <title>Home - Iari Normanno</title>
+  </head>
+  <body>
+
+    <!-- Snow -->
+    <div id="snow">
+      <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="inner-width">
+        <div class="logo">$$$</div>
+        <button class="menu-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navbar-menu">
+          <a href="#" class="aboutme">About me</a>
+          <a href="project.html">Project</a>
+        </div>
+      </div>
+    </nav>
+
+<!-- Home -->
+    <section id="home">
+      <div class="inner-width">
+        <div class="content">
+          <div class="container">
+            <h1>
+              Hello, My name is
+              <span
+                class="txt-type"
+                data-wait="3000"
+                data-words='["Iari.", "who$y."]'
+              ></span>
+            </h1>
+            <div id="fadeup"><p>Welcome To My Website</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+        <div class="inner-width">
+          <div class="about-content">
+            <div class="about-text">
+              <h1>About me</h1>
+              <h2>Web Developer &amp; Scripter</h1>
+              <p>Hi! I'm Sammy the Shark, Senior Selachimorpha at DigitalOcean by day, dabbler in all things dev by night. This site is a demonstration website for the tutorial series "<a href="https://www.digitalocean.com/community/tutorial_series/how-to-build-a-website-with-css">How To Build a Website With CSS</a>," which walks you through building and customizing this website from start to finish.</p>
+              <p>If you're following this tutorial series, you can replace this text with your own "About Me" content.</p>
+            </div>
+          </div>
+        </section>
+
+      <!--Script -->  
+          <script>
+              $(document).ready(function(){
+    $(window).scroll(function(){
+      if(this.scrollY > 20){
+        $(".navbar").addClass("sticky");
+        $(".goTop").fadeIn();
+      }
+      else{
+        $(".navbar").removeClass("sticky");
+        $(".goTop").fadeOut();
+      }
+    });
+    
+    $(".goTop").click(function(){scroll(0,0)});
+    $(".goDown").click(function(){scroll(0,9999)});
+    $('.menu-toggler').click(function(){
+      $(this).toggleClass("active");
+      $(".navbar-menu").toggleClass("active");
+    });
+  });
+    </script>
+
+    <script src="src/js/index.js"></script>
+
+    <button class="goTop fas fa-arrow-up"></button>
+  </body>
+</html>
