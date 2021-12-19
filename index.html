@@ -14,6 +14,22 @@
   </head>
   <body>
 
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="inner-width">
+        <div class="logo">$$$</div>
+        <button class="menu-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navbar-menu">
+          <a href="#about" class="aboutme">Chi sono</a>
+          <a href="project.html">Progetti</a>
+        </div>
+      </div>
+    </nav>
+
     <!-- Snow -->
     <div id="snow">
       <div class="snowflakes" aria-hidden="true">
@@ -50,37 +66,20 @@
       </div>
     </div>
 
-
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="inner-width">
-        <div class="logo">$$$</div>
-        <button class="menu-toggler">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="navbar-menu">
-          <a href="#" class="aboutme">About me</a>
-          <a href="project.html">Project</a>
-        </div>
-      </div>
-    </nav>
-
 <!-- Home -->
     <section id="home">
       <div class="inner-width">
         <div class="content">
           <div class="container">
             <h1>
-              Hello, My name is
+              Heyo, Mi chiamo
               <span
                 class="txt-type"
                 data-wait="3000"
                 data-words='["Iari.", "who$y."]'
               ></span>
             </h1>
-            <div id="fadeup"><p>Welcome To My Website</p></div>
+            <div id="fadeup"><p>Benvenuto nel mio sito</p></div>
           </div>
         </div>
       </div>
@@ -91,13 +90,19 @@
         <div class="inner-width">
           <div class="about-content">
             <div class="about-text">
-              <h1>About me</h1>
+              <h1>Chi sono</h1>
               <h2>Web Developer &amp; Scripter</h1>
-              <p>Hi! I'm Sammy the Shark, Senior Selachimorpha at DigitalOcean by day, dabbler in all things dev by night. This site is a demonstration website for the tutorial series "<a href="https://www.digitalocean.com/community/tutorial_series/how-to-build-a-website-with-css">How To Build a Website With CSS</a>," which walks you through building and customizing this website from start to finish.</p>
-              <p>If you're following this tutorial series, you can replace this text with your own "About Me" content.</p>
+              <p>Ciao! Sono iari aka "who$y", ho 19 anni e sono un neo-diplomato in informatica presso l'istituto I.T.C.S.G. Masullo - Theti. Attualmente studente presso l'<a href="https://www.di.unisa.it/">Ateneo di Fisciano.</a> Appassionato di programmazione e computer da quando avevo 12 anni, ho sempre cercato di studiare le cose da autodidatta oltre la scuola. </p>
+              <p>Linguaggi che sto perfezionando - <i class="fab fa-js" href="https://pages.github.com/"></i> Lua <i class="fab fa-react"></i></p>
             </div>
           </div>
         </section>
+
+        <footer>
+          <div class="footer">
+            Made with love
+          </div>
+        </footer>
 
       <!--Script -->  
           <script>
@@ -114,11 +119,14 @@
     });
     
     $(".goTop").click(function(){scroll(0,0)});
-    $(".goDown").click(function(){scroll(0,9999)});
     $('.menu-toggler').click(function(){
       $(this).toggleClass("active");
       $(".navbar-menu").toggleClass("active");
+
     });
+
+    var about = document.getElementById("about");
+    about.scrollIntoView();
   });
     </script>
 
