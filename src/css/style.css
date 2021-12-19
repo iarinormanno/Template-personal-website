@@ -17,7 +17,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 3px;
   background-color: #f1f1f1;
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 section {
-  padding: 150px 0;
+  padding: 90px 0;
   background-color: #f1f1f1;
 }
 
@@ -154,11 +154,7 @@ section {
   line-height: 2;
 }
 
-.about-text h2 {
-  margin: 10px 0;
-  color: #777;
-  font-size: 13px;
-}
+
 .about-text h1 {
   margin: 10px 0;
   color: #444;
@@ -207,6 +203,13 @@ h2 {
   color: #fff;
   outline: none;
   display: none;
+}
+
+.footer {
+  padding: 25px 0;
+  background-color: #141414;
+  color: white;
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
