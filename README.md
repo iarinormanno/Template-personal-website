@@ -4,7 +4,7 @@ Template per sito base con sezione chi sono, adattabile su tutte i dispositivi.
 
 ## Demo
 
-Ecco a te una demo del [sito](https://iarinormanno.github.io/personalwebsite/)
+Ecco a te una demo del [sito](https://iarinormanno.github.io/Template-personal-website/)
 
 ## Come togliere effetto neve
 
